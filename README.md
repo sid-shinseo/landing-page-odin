@@ -25,7 +25,7 @@ This project is a static landing page designed to practice basic HTML and CSS sk
 
 ## 📸 Preview
 
-![Landing Page Screenshot](./screenshot.png) <!-- Replace with your actual image file if available -->
+![Landing Page Screenshot](./Screenshot-landing-page.png)
 
 ## 📁 Project Structure
 
