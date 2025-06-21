@@ -25,13 +25,13 @@ This project is a static landing page designed to practice basic HTML and CSS sk
 
 ## 📸 Preview
 
-![Landing Page Screenshot](./screenshot.png) <!-- Replace with your actual image file if available -->
+![Landing Page Screenshot](.\Screenshot-landing-page.png)
 
 ## 📁 Project Structure
 
 ```bash
 landing-page/
 │
-├── index.html          # Main HTML file
-├── style.css           # CSS stylesheet
-└── README.md           # This file
+├── index.html          
+├── style.css           
+└── README.md           
