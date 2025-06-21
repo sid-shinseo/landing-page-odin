@@ -1,5 +1,10 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
 
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
 
 
 :root{
@@ -16,6 +21,7 @@
     --logo-text-color : #F9FAF8;
 
     --btn-bg-color : #3882F6;
+    --btn-bg-color-hover: hsla(217, 91%, 59%, 0.527);
 
     --info-header-text-size : 36px;
     --info-header-text-color : #1F2937;
@@ -47,7 +53,6 @@ a {
     max-width: 1080px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 1rem; 
 }
 
 /* HEADER */
@@ -55,12 +60,14 @@ a {
     background-color: var(--bg-hero-footer);
     width: 100%;
     height: auto;
+    padding-bottom: 95px;
 }
 .header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
+    padding: 25px 0;
     align-items: center;
+    
 }
 .header-logo{
     font-size: var(--logo-text-size);
@@ -78,5 +85,171 @@ a {
     color: var(--logo-text-color);
 }
 .navbar > a:hover {
-    color: red;
+    color: var(--btn-bg-color);
+}
+
+/* HERO */
+.hero-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.hero-title{
+    max-width: 450px;
+}
+.hero-main-text{
+    font-size: var(--hero-main-text-size);
+    font-weight: var(--hero-main-text-weight);
+    color : var(--hero-main-text-color);
+    margin: 40px 0 15px 0;
+}
+.hero-secondary-text{
+    font-size: var(--hero-secondary-text-size);
+    color : var(--hero-secondary-text-color);
+    margin-bottom: 10px;
+}
+
+.btn-hero{
+    background-color: var(--btn-bg-color);
+    color: var(--hero-main-text-color);
+
+    box-sizing: border-box;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    padding: 8px 30px;
+    border-radius: 8px;
+}
+
+/* RANDOM INFO */
+
+.random-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 40px 0;
+}
+
+.random-info-title{
+    font-size: var(--info-header-text-size);
+    font-weight: var(--info-header-text-weight);
+    color: var(--info-header-text-color);
+}
+.random-info-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding-bottom: 50px;
+}
+.random-info-box{
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.random-info-illustration{
+    border: var(--btn-bg-color) solid 4px;
+    border-radius: 15px;
+    width: 150px;
+    height: 150px;
+}
+.random-info-text{
+    text-align: center;
+}
+
+/* QUOTE */
+
+.quote{
+    background-color: var(--quote-section-bg-color);
+
+
+
+    padding: 150px 0;
+}
+
+.quote-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote-main-text{
+    color: var(--quote-section-text-color);
+    font-style: var(--quote-section-text-font-style-italic);
+    font-size: var(--quote-section-text-size);
+    font-weight: 300;
+    padding-bottom: 30px;
+}
+.quote-author{
+    font-weight: bold;
+    float: right;
+}
+
+/* CALL TO ACTION */
+
+.call-to-action{
+    padding: 100px 0px;
+}
+.call-box{
+    background-color: var(--btn-bg-color);
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.call-box-text-title{
+    color: var(--hero-main-text-color);
+    font-weight: 700;
+    font-size: 24px;
+}
+.call-box-text{
+    color: var(--hero-secondary-text-color);
+
+}
+.btn-call{
+    background-color: transparent;
+    color: var(--hero-main-text-color);
+    border: white 2px solid;
+    height: 40px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 0px 35px;
+    border-radius: 8px;
+}
+
+/* FOOTER*/
+
+.footer{
+    background-color: var(--bg-hero-footer);
+    padding: 35px 0;
+}
+.footer-box{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+}
+.footer-text{
+    color: var(--hero-secondary-text-color);
+}
+
+
+/* UTILITY CLASS*/
+.animate-hover:hover {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius : 10px;
+}
+.link{
+    color: var(--hero-secondary-text-color);
+
 }
